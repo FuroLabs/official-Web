@@ -39,9 +39,9 @@ export const companyConfig = {
   // BRANDING & DISPLAY
   // ============================================
   branding: {
-    logoAlt: 'NevroLabs Logo',
+    logoAlt: 'Furo Labs Logo',
     copyrightYear: new Date().getFullYear(),
-    copyrightText: `Copyright (c) ${new Date().getFullYear()} NevroLabs`,
+    copyrightText: `Copyright (c) ${new Date().getFullYear()} Furo Labs`,
   },
 
   // ============================================
@@ -65,9 +65,9 @@ export const companyConfig = {
   // SECURITY & POLICIES
   // ============================================
   security: {
-    securityEmail: 'nevrolabs@gmail.com',
-    supportEmail: 'nevrolabs@gmail.com',
-    issueReportingEmail: 'nevrolabs@gmail.com',
+    securityEmail: 'furolabs@gmail.com',
+    supportEmail: 'furolabs@gmail.com',
+    issueReportingEmail: 'furolabs@gmail.com',
   },
 } as const;
 

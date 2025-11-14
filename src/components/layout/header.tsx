@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Bot, X } from 'lucide-react';
+import { companyConfig } from '@/lib/company-config';
 
 const navLinks = [
   { href: '#services', label: 'Services' },
@@ -53,7 +54,7 @@ export default function Header() {
                 <Bot className="h-7 w-7 text-primary" />
               </motion.div>
               <span className="font-bold font-display text-xl">
-                NevroLabs
+                {companyConfig.name}
               </span>
             </Link>
           </motion.div>

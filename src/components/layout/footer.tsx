@@ -3,12 +3,13 @@
 import { motion } from 'framer-motion';
 import { Bot, Github, Linkedin, Twitter, Mail, MapPin, Phone, Heart } from 'lucide-react';
 import Link from 'next/link';
+import { companyConfig } from '@/lib/company-config';
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Twitter, href: '#', name: 'Twitter', color: 'hover:text-blue-400' },
-    { icon: Github, href: 'https://github.com/NevroLabs', name: 'GitHub', color: 'hover:text-gray-400' },
-    { icon: Linkedin, href: '#', name: 'LinkedIn', color: 'hover:text-blue-600' },
+    { icon: Twitter, href: companyConfig.socialLinks.twitter, name: 'Twitter', color: 'hover:text-blue-400' },
+    { icon: Github, href: companyConfig.socialLinks.github, name: 'GitHub', color: 'hover:text-gray-400' },
+    { icon: Linkedin, href: companyConfig.socialLinks.linkedin, name: 'LinkedIn', color: 'hover:text-blue-600' },
   ];
 
   const quickLinks = [
@@ -19,9 +20,9 @@ export default function Footer() {
   ];
 
   const contactInfo = [
-  { icon: Mail, text: 'nevrolabs@gmail.com' },
-    { icon: Phone, text: '+94 (74) 3288-572' },
-    { icon: MapPin, text: 'M/28, 1st Lane, Isurupura, Malabe' },
+    { icon: Mail, text: companyConfig.contact.email },
+    { icon: Phone, text: companyConfig.contact.phone },
+    { icon: MapPin, text: companyConfig.contact.address },
   ];
 
   return (
@@ -60,7 +61,7 @@ export default function Footer() {
                 <Bot className="h-8 w-8 text-primary" />
               </motion.div>
               <span className="font-bold font-display text-xl">
-                NevroLabs
+                {companyConfig.name}
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
