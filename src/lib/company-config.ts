@@ -11,16 +11,16 @@ export const companyConfig = {
   // ============================================
   // BASIC COMPANY INFORMATION
   // ============================================
-  name: 'NevroLabs',
-  displayName: 'NevroLabs',
+  name: 'Furo Labs',
+  displayName: 'Furo Labs',
   tagline: 'Crafting digital experiences that inspire and transform businesses through innovative technology solutions.',
   
   // ============================================
   // CONTACT INFORMATION
   // ============================================
   contact: {
-    email: 'nevrolabs@gmail.com',
-    phone: '+94 (74) 3288-572',
+    email: 'furolabs@gmail.com',
+    phone: '+94 (72) 5253-444',
     address: 'M/28, 1st Lane, Isurupura, Malabe',
   },
 
@@ -29,8 +29,8 @@ export const companyConfig = {
   // ============================================
   socialLinks: {
     twitter: '#',
-    github: 'https://github.com/NevroLabs',
-    linkedin: '#',
+    github: 'https://github.com/FuroLabs',
+    linkedin: 'https://www.linkedin.com/company/furolabs',
     instagram: '',
     facebook: '',
   },
