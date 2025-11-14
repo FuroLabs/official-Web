@@ -1,14 +1,14 @@
-# Security Policy for NevroLabs Official Website
+# Security Policy for Furo Labs Official Website
 
 Last updated: 2025-09-16
 
-This repository hosts the official website for NevroLabs. Security is a top priority. If you discover a security vulnerability, please follow the responsible disclosure process below.
+This repository hosts the official website for Furo Labs. Security is a top priority. If you discover a security vulnerability, please follow the responsible disclosure process below.
 
 ## Reporting a vulnerability
 
 Do NOT open a public issue for security vulnerabilities. Instead, contact us privately at:
 
-- Email: `nevrolabs@gmail.com`
+- Email: `furolabs@gmail.com`
 
 When reporting, please include:
 
@@ -43,23 +43,23 @@ We will acknowledge receipt of your report within 3 business days. Our security 
 In-scope:
 
 - Code and configuration in this repository (`src/`, `docs/`, build scripts, etc.)
-- Publicly-deployed website instances owned by NevroLabs using this code
+- Publicly-deployed website instances owned by Furo Labs using this code
 
 Out-of-scope:
 
 - Third-party systems or integrations (unless demonstrating an exploit that affects our code)
-- Attacks that require physical access or social engineering of NevroLabs staff
+- Attacks that require physical access or social engineering of Furo Labs staff
 
 ## Safe harbor & legal
 
-NevroLabs supports good-faith security research. If you follow this policy and do not exceed reasonable limits, we will not pursue legal action against you. Do not access, modify, or destroy customer data beyond what is necessary to demonstrate the issue.
+Furo Labs supports good-faith security research. If you follow this policy and do not exceed reasonable limits, we will not pursue legal action against you. Do not access, modify, or destroy customer data beyond what is necessary to demonstrate the issue.
 
 ## Disclosure & credit
 
-With your consent, NevroLabs may publicly credit you for responsibly reporting the issue. If you prefer anonymity, please state that in your report.
+With your consent, Furo Labs may publicly credit you for responsibly reporting the issue. If you prefer anonymity, please state that in your report.
 
 ## Contact
 
-Email: `nevrolabs@gmail.com`
+Email: `furolabs@gmail.com`
 
-Thank you for helping us keep NevroLabs secure.
+Thank you for helping us keep Furo Labs secure.

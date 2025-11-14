@@ -1,12 +1,12 @@
-# Contributing to NevroLabs Official Website
+# Contributing to Furo Labs Official Website
 
-Thank you for your interest in contributing. This repository hosts the official NevroLabs website. Contributions are strictly limited to authorized NevroLabs employees, company owners, and repository administrators. Unauthorized contributions are not accepted.
+Thank you for your interest in contributing. This repository hosts the official Furo Labs website. Contributions are strictly limited to authorized Furo Labs employees, company owners, and repository administrators. Unauthorized contributions are not accepted.
 
-If you are not an authorized employee or owner and need changes made (content updates, bug fixes, new pages, etc.), please contact `nevrolabs@gmail.com` with a short summary of the requested change and your organization/role; the team will review and coordinate.
+If you are not an authorized employee or owner and need changes made (content updates, bug fixes, new pages, etc.), please contact `furolabs@gmail.com` with a short summary of the requested change and your organization/role; the team will review and coordinate.
 
 ## Who may contribute
 
-- Authorized NevroLabs employees
+- Authorized Furo Labs employees
 - Company owners
 - Repository administrators (maintainers)
 
@@ -14,14 +14,14 @@ Only the people listed above should push branches or open pull requests in this 
 
 ## Requesting contributor access
 
-If you believe you should have contributor access, email `nevrolabs@gmail.com` with:
+If you believe you should have contributor access, email `furolabs@gmail.com` with:
 
 - Your full name
 - Work email and GitHub username
 - Role and reason for access
 - Any required start/end dates (for contractors)
 
-Access is granted at the discretion of NevroLabs leadership and repository administrators.
+Access is granted at the discretion of Furo Labs leadership and repository administrators.
 
 ## Branching & workflow
 
@@ -68,7 +68,7 @@ Access is granted at the discretion of NevroLabs leadership and repository admin
 
 ## Security issues
 
-If you discover a security vulnerability, do not open a public issue. Instead, email `nevrolabs@gmail.com` with details of the issue and sensitive information (if necessary). The security team will respond and coordinate remediation.
+If you discover a security vulnerability, do not open a public issue. Instead, email `furolabs@gmail.com` with details of the issue and sensitive information (if necessary). The security team will respond and coordinate remediation.
 
 ## Tests & CI
 
@@ -86,12 +86,12 @@ If you discover a security vulnerability, do not open a public issue. Instead, e
 
 ## Enforcement & audit
 
-NevroLabs reserves the right to refuse, revert, or audit any contribution. Repeated violations of these guidelines (sensitive data commits, bypassing review, or unauthorized access) may result in revoked access.
+Furo Labs reserves the right to refuse, revert, or audit any contribution. Repeated violations of these guidelines (sensitive data commits, bypassing review, or unauthorized access) may result in revoked access.
 
 ## Questions
 
-If you have any questions about the contribution process or need help preparing a PR, contact `nevrolabs@gmail.com`.
+If you have any questions about the contribution process or need help preparing a PR, contact `furolabs@gmail.com`.
 
 ---
 
-This document reflects the contribution policy for the NevroLabs official website repository. Updates to this file may be made by repository administrators.
+This document reflects the contribution policy for the Furo Labs official website repository. Updates to this file may be made by repository administrators.

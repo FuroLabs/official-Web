@@ -1,4 +1,4 @@
-# **App Name**: NevroLabs
+# **App Name**: Furo Labs
 
 ## Core Features:
 

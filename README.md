@@ -1,10 +1,10 @@
-# NevroLabs
+# Furo Labs
 
-NevroLabs is a software engineering company specializing in delivering end-to-end digital products and platforms. We combine product-minded engineering, modern design, and data-driven AI capabilities to help organizations build scalable web and mobile applications.
+Furo Labs is a software engineering company specializing in delivering end-to-end digital products and platforms. We combine product-minded engineering, modern design, and data-driven AI capabilities to help organizations build scalable web and mobile applications.
 
 ## Who we are
 
-NevroLabs brings together a multidisciplinary team of engineers, designers, and product managers with deep experience across frontend, backend, cloud, and mobile development. We focus on solving complex problems with pragmatic engineering and clear communication.
+Furo Labs brings together a multidisciplinary team of engineers, designers, and product managers with deep experience across frontend, backend, cloud, and mobile development. We focus on solving complex problems with pragmatic engineering and clear communication.
 
 ## Our mission
 
@@ -47,7 +47,7 @@ We value small, empowered teams. Our core leadership combines experience buildin
 
 ## Get in touch
 
-Email: `nevrolabs@gmail.com`
+Email: `furolabs@gmail.com`
 
 We welcome inquiries about new projects, partnerships, or open roles. Please include a short description of your goals, timeline, and budget when contacting us.
 
