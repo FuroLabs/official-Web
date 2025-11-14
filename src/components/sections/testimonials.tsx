@@ -11,11 +11,12 @@ import {
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { companyConfig } from '@/lib/company-config';
 
 const testimonials = [
   {
     quote:
-  "NevroLabs delivered beyond our wildest expectations. Their team's expertise in web development is second to none. The final product was not only beautiful but also incredibly performant.",
+  `${companyConfig.name} delivered beyond our wildest expectations. Their team's expertise in web development is second to none. The final product was not only beautiful but also incredibly performant.`,
     name: 'Jane Doe',
     title: 'CEO, Innovate Inc.',
     logoId: 'client-logo-1',
@@ -29,7 +30,7 @@ const testimonials = [
   },
   {
     quote:
-  "Working with NevroLabs was a game-changer. They built a custom software solution that streamlined our entire workflow, saving us thousands of hours.",
+  `Working with ${companyConfig.name} was a game-changer. They built a custom software solution that streamlined our entire workflow, saving us thousands of hours.`,
     name: 'Emily White',
     title: 'COO, DataDriven Corp.',
     logoId: 'client-logo-3',

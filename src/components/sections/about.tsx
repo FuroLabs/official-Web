@@ -5,12 +5,13 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Calendar, TrendingUp, Users, Zap } from 'lucide-react';
 import { useScrollAnimation, staggerContainer, fadeInUp, slideInLeft, slideInRight } from '@/hooks/use-scroll-animation';
+import { companyConfig } from '@/lib/company-config';
 
 const timelineData = [
   {
     year: '2018',
     title: 'The Spark',
-  description: 'NevroLabs was founded by a group of passionate developers with a shared vision for a better digital future.',
+    description: `${companyConfig.name} was founded by a group of passionate developers with a shared vision for a better digital future.`,
     icon: <Zap className="h-5 w-5" />,
   },
   {

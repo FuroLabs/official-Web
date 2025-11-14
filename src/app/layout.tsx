@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
+import { companyConfig } from '@/lib/company-config';
 
 export const metadata: Metadata = {
-  title: 'NevroLabs',
+  title: companyConfig.name,
   description: 'Innovating the Future of Technology',
 };
 

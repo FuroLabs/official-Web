@@ -192,7 +192,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              &copy; {new Date().getFullYear()} NevroLabs. All rights reserved.
+              &copy; {companyConfig.branding.copyrightYear} {companyConfig.name}. All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <span>Made with</span>
@@ -208,7 +208,7 @@ export default function Footer() {
               >
                 <Heart className="h-4 w-4 text-red-500 fill-current" />
               </motion.div>
-              <span>by the NevroLabs team</span>
+              <span>by the {companyConfig.name} team</span>
             </div>
           </div>
         </motion.div>
