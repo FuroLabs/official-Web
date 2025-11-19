@@ -19,8 +19,8 @@ export default function Home() {
           <Services />
           <About />
           <TechVisualizer />
-          <Team />
-          <Testimonials />
+          {/* <Team /> */}
+          {/* <Testimonials /> */}
           <Contact />
         </main>
       </PageTransition>
