@@ -121,11 +121,11 @@ export default function Hero() {
           className="mt-12 grid grid-cols-3 gap-6 text-center sm:mt-16 sm:gap-8 md:gap-12"
         >
           <div>
-            <div className="text-xl font-bold text-primary sm:text-2xl">100+</div>
+            <div className="text-xl font-bold text-primary sm:text-2xl">5+</div>
             <div className="text-xs text-muted-foreground sm:text-sm">Projects Delivered</div>
           </div>
           <div>
-            <div className="text-xl font-bold text-primary sm:text-2xl">50+</div>
+            <div className="text-xl font-bold text-primary sm:text-2xl">2.4M+</div>
             <div className="text-xs text-muted-foreground sm:text-sm">Happy Clients</div>
           </div>
           <div>
