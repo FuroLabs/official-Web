@@ -183,9 +183,9 @@ export default function About() {
         >
           {[
             { label: 'Years of Experience', value: '6+' },
-            { label: 'Projects Completed', value: '100+' },
-            { label: 'Happy Clients', value: '50+' },
-            { label: 'Team Members', value: '25+' },
+            { label: 'Projects Completed', value: '5+' },
+            { label: 'Happy Clients', value: '2.4M+' },
+            { label: 'Team Members', value: '15+' },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
