@@ -219,12 +219,3 @@ Feel free to open issues or submit pull requests. For larger changes, open an is
 ## License
 
 This repository does not include a license file. Add a `LICENSE` if you want to specify reuse terms.
-
----
-
-If you want, I can also:
-- Add a `.env.example` with the environment variable names (no values).
-- Add a simple script to migrate `src/lib/firebase.ts` to use environment variables.
-- Generate GitHub Action workflow templates for lint/typecheck.
-
-Tell me which of the above you'd like me to do next and I will implement it.
