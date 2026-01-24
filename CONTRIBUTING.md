@@ -1,80 +1,87 @@
-# Contributing to the FURO Labs Official Web
+# Contribution Guidelines: Official FURO Labs Website
 
-Welcome to the heart of our digital presence. Because this repository represents the **FURO Labs** brand to the world, we maintain a high standard for quality, security, and design.
+This repository serves as the primary digital presence for FURO Labs. Given its visibility and brand impact, we maintain rigorous standards for code quality, security, and architectural integrity.
 
 > [!CAUTION]
-> **🛑 INTERNAL ONLY:** This repository is restricted to authorized FURO Labs employees, owners, and administrators. External pull requests are not accepted unless specifically requested by leadership.
+> **Proprietary Notice:** Access to this repository is restricted to authorized FURO Labs employees, owners, and designated administrators. External contributions are not accepted. Unauthorized pull requests will be closed without review.
 
 ---
 
-## 🏗️ The Workflow
+## Deployment Workflow
 
-Unlike our other repositories, the Official Web uses a strict **`dev` → `main**` promotion strategy to ensure production stability.
+The official website follows a strict multi-tier promotion strategy to ensure production stability. Development occurs on the `dev` branch before being promoted to `main` for release.
 
-1. **Sync:** Ensure your local `dev` branch is up to date.
-2. **Branch:** Create a feature branch from `dev`.
-* `git checkout -b feat/team-update dev`
-3. **Build:** Implement changes following our [Tech Stack](https://www.google.com/search?q=%23-tech-stack) guidelines.
-4. **Verify:** Run local checks (Linting & Type-checking).
-5. **PR:** Open a Pull Request targeting the **`dev`** branch.
+1. **Synchronization:** Ensure your local `dev` branch is synchronized with the upstream origin.
+2. **Branching:** Create a feature branch originating from `dev` using descriptive prefixes.
+* Example: `git checkout -b feat/team-update dev`
 
----
 
-## ✅ Pre-Flight Checklist
-
-Before submitting your PR, ensure it passes the FURO Labs "Senior-Led" standard:
-
-* [ ] **Build Check:** `npm run dev` starts without console errors.
-* [ ] **Type Safety:** `npm run typecheck` passes (No `any` types allowed).
-* [ ] **Linting:** `npm run lint` passes perfectly.
-* [ ] **Secrets:** Verified that no Firebase keys or `.env` values are tracked by Git.
-* [ ] **UI Sync:** Animations (`framer-motion`) and styles align with the [Brand Identity](https://www.google.com/search?q=%23-brand-identity).
+3. **Implementation:** Develop changes following the established [Technical Specifications](#technical-specifications).
+4. **Verification:** Execute all local validation checks, including linting, type-checking, and build tests.
+5. **Submission:** Open a Pull Request targeting the **`dev`** branch.
 
 ---
 
-## 🎨 Brand Identity
+## Technical Quality Standards
 
-Every pixel on the official site must adhere to our visual language:
+Before submitting a Pull Request, all contributors must verify that the following criteria are met:
 
-* **Primary Cyan:** `#3BE2FF` (Futuristic & Clean)
-* **Accent Purple:** `#C452FF` (Electric & Bold)
-* **Deep Navy:** `#121E29` (Background)
-* **Typography:** 'Space Grotesk' for headlines; clean sans-serif for body.
-* **Icons:** Exclusively use `lucide-react` or `@tabler/icons-react`.
-
----
-
-## 🛠️ Tech Stack & Patterns
-
-* **Framework:** Next.js (App Router) + TypeScript.
-* **Styling:** Tailwind CSS + Radix UI primitives.
-* **Backend:** Firebase/Firestore (Environment-driven config).
-* **AI Integration:** Genkit flows should live under `src/ai`.
-* **Team Management:** Updates to team bios happen in `src/components/sections/team.tsx`.
+* **Build Integrity:** The application must compile successfully via `npm run dev` or `npm run build` without console warnings or errors.
+* **Type Safety:** Strict TypeScript compliance is required. The use of `any` types is prohibited. Run `npm run typecheck` to verify.
+* **Code Linting:** All code must pass ESLint configurations via `npm run lint`.
+* **Credential Security:** Verify that no Firebase API keys, service accounts, or `.env` variables are included in the commit history.
+* **Design Alignment:** UI components and animations must adhere to the defined brand identity and utilize `framer-motion` for interaction consistency.
 
 ---
 
-## 🔐 Secrets & Security
+## Brand Identity and Design Systems
 
-This repository is **Public** for infrastructure benefits, but the data is **Proprietary**.
+All interface modifications must comply with the FURO Labs visual identity:
 
-* **Environment Variables:** Use `.env.local` for development. Never commit real credentials.
-* **Secret Leakage:** If you accidentally commit a secret, notify a Repository Admin immediately and rotate the key.
-* **Vulnerabilities:** Reported security issues should be sent directly to `furolabs@gmail.com`—do not open a public issue.
+* **Color Palette:**
+* Primary: Futuristic Cyan (`#3BE2FF`)
+* Accent: Electric Purple (`#C452FF`)
+* Background: Dark Navy (`#121E29`)
 
----
 
-## 🔀 Pull Request Requirements
-
-* **Target Branch:** All PRs must target `dev`. Only Admins/Owners merge `dev` into `main`.
-* **Description:** Include screenshots/screen-recordings for any UI changes.
-* **Reviewers:** Tag at least one Owner or Lead Engineer for review.
-* **Approval:** At least one "Approve" is required to merge.
+* **Typography:** 'Space Grotesk' for headlines; standard sans-serif for body text.
+* **Iconography:** Strictly limited to `lucide-react` or `@tabler/icons-react`.
 
 ---
 
-## 👥 Access & Questions
+## Technical Specifications
 
-If you are a new team member and need contributor access, please email `furolabs@gmail.com` with your GitHub username and role.
+* **Framework:** Next.js (App Router) utilizing TypeScript.
+* **Styling:** Tailwind CSS integrated with Radix UI primitives.
+* **Backend:** Firebase Firestore (managed via environment-driven configurations).
+* **AI Architecture:** Genkit flows must be contained within the `src/ai` directory.
+* **Static Content:** Team-related metadata and bios are managed in `src/components/sections/team.tsx`.
 
-### 🚀 Let’s build a digital experience that reflects our engineering excellence.
+---
+
+## Security and Confidentiality
+
+While this repository is public for infrastructure optimization, the contents remain the proprietary intellectual property of FURO Labs.
+
+* **Environment Management:** Use `.env.local` for development. Never commit sensitive credentials to source control.
+* **Secret Mitigation:** In the event of a credential leak, notify a Repository Administrator immediately to initiate rotation.
+* **Vulnerability Reporting:** Do not open public issues for security flaws. Direct all sensitive reports to [furolabs@gmail.com](mailto:furolabs@gmail.com).
+
+---
+
+## Pull Request Requirements
+
+* **Branch Targeting:** All PRs must target the `dev` branch. Direct merges to `main` are reserved for official releases by Administrators.
+* **Documentation:** PR descriptions must include a clear summary of changes and, where applicable, visual evidence (screenshots or screen recordings) of UI modifications.
+* **Review Process:** Assign at least one Lead Engineer or Owner for review.
+* **Approval Policy:** A minimum of one formal approval is required for a merge.
+
+---
+
+## Access and Inquiries
+
+For contributor access or technical questions regarding this repository, please contact the administration team at [furolabs@gmail.com](mailto:furolabs@gmail.com) with your GitHub username and organizational role.
+
+---
+
+Would you like me to draft a **Pull Request Template** that matches this professional tone for the official website?
