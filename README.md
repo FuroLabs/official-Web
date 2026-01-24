@@ -42,4 +42,5 @@ We’re always meeting thoughtful builders and designers. If you care about qual
 
 ---
 
-This repository hosts our public site and materials. It’s kept lightweight and focused on our story, work, and values. Technical implementation details are intentionally minimized here to keep the emphasis on what matters: the problems we solve and the outcomes we deliver.
+> [!NOTE]  
+> This repository hosts our public site and materials. It’s kept lightweight and focused on our story, work, and values. Technical implementation details are intentionally minimized here to keep the emphasis on what matters: the problems we solve and the outcomes we deliver.
