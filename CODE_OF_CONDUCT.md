@@ -1,128 +1,52 @@
-# Contributor Covenant Code of Conduct
+# FURO Labs Code of Conduct
 
 ## Our Pledge
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+We, as members, contributors, and leaders of the FURO Labs engineering community, pledge to maintain a professional, harassment-free environment for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+We are committed to acting and interacting in ways that contribute to an open, welcoming, diverse, inclusive, and healthy professional community.
 
-## Our Standards
+## Professional Standards
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+Examples of behavior that contributes to a positive environment include:
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+* **Professional Empathy:** Demonstrating respect and kindness toward other people.
+* **Technical Objectivity:** Being respectful of differing opinions, viewpoints, and experiences during technical discussions and code reviews.
+* **Constructive Critique:** Providing and gracefully accepting professional, evidence-based feedback.
+* **Accountability:** Accepting responsibility and apologizing to those affected by our mistakes, and utilizing the experience as a learning opportunity.
+* **Project Stewardship:** Focusing on what is best for the long-term health of the software and the community, rather than individual preference.
 
-Examples of unacceptable behavior include:
+## Unacceptable Behavior
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+The following behaviors are considered violations of this Code:
+
+* The use of sexualized language or imagery, and unwelcome sexual attention or advances of any kind.
+* Trolling, insulting or derogatory comments, and personal or political attacks.
+* Public or private harassment.
+* Publishing others' private information, such as physical or email addresses, without their explicit permission (doxing).
+* Other conduct which could reasonably be considered inappropriate in a professional workplace or engineering setting.
 
 ## Enforcement Responsibilities
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+FURO Labs leadership is responsible for clarifying and enforcing our standards of acceptable behavior. We will take appropriate and fair corrective action in response to any behavior deemed inappropriate, threatening, offensive, or harmful.
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+Repository maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned with this Code of Conduct.
 
 ## Scope
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+This Code of Conduct applies within all project spaces (including GitHub, Slack, and email) and also applies when an individual is officially representing FURO Labs in public spaces.
 
-## Enforcement
+## Reporting and Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-furolabs@gmail.com.
-All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the leadership team at **furolabs@gmail.com**. All complaints will be reviewed and investigated promptly and fairly.
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+### Enforcement Guidelines
 
-## Enforcement Guidelines
-
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
-
-### 1. Correction
-
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
-
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
-
-### 2. Warning
-
-**Community Impact**: A violation through a single incident or series
-of actions.
-
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
-
-### 3. Temporary Ban
-
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
-
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
-
-### 4. Permanent Ban
-
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
-
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
+1. **Correction:** A private, written warning providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate.
+2. **Warning:** A formal warning with defined consequences for continued behavior. Interaction with those involved may be restricted for a specific period.
+3. **Temporary Ban:** A temporary removal from FURO Labs repositories and communication channels.
+4. **Permanent Ban:** Permanent removal from the organization and its digital assets for a pattern of violation or a single severe incident.
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
-
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
-
-[homepage]: https://www.contributor-covenant.org
-
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.0, and inspired by the [Mozilla Community Participation Guidelines](https://www.mozilla.org/about/governance/policies/participation/).
