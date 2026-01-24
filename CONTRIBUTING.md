@@ -1,97 +1,80 @@
-# Contributing to Furo Labs Official Website
+# Contributing to the FURO Labs Official Web
 
-Thank you for your interest in contributing. This repository hosts the official Furo Labs website. Contributions are strictly limited to authorized Furo Labs employees, company owners, and repository administrators. Unauthorized contributions are not accepted.
+Welcome to the heart of our digital presence. Because this repository represents the **FURO Labs** brand to the world, we maintain a high standard for quality, security, and design.
 
-If you are not an authorized employee or owner and need changes made (content updates, bug fixes, new pages, etc.), please contact `furolabs@gmail.com` with a short summary of the requested change and your organization/role; the team will review and coordinate.
-
-## Who may contribute
-
-- Authorized Furo Labs employees
-- Company owners
-- Repository administrators (maintainers)
-
-Only the people listed above should push branches or open pull requests in this repository. All changes must follow the workflow below and pass required checks before merging.
-
-## Requesting contributor access
-
-If you believe you should have contributor access, email `furolabs@gmail.com` with:
-
-- Your full name
-- Work email and GitHub username
-- Role and reason for access
-- Any required start/end dates (for contractors)
-
-Access is granted at the discretion of Furo Labs leadership and repository administrators.
-
-## Branching & workflow
-
-1. Create a branch from `dev` using a descriptive name. Example:
-
-   ```bash
-   git checkout -b feat/team-update/jane-doe dev
-   ```
-
-2. Implement your changes on the branch. Keep changes focused and small where possible.
-
-3. Run local checks (lint, typecheck, and tests) before opening a pull request:
-
-   ```bash
-   npm install
-   npm run lint
-   npm run typecheck
-   npm test    # if tests are added
-   ```
-
-4. Push your branch and open a Pull Request targeting `dev` with a clear description of the change and related issue (if any).
-
-5. The PR must include which maintainers or owners should review, and must reference any related tickets or client approvals.
-
-## Pull request requirements
-
-- PRs must be opened against the `dev` branch.
-- Include a short description of the change, motivation, and any screenshots or screenshots for UI changes.
-- All automated checks (lint/typecheck/CI) must pass before requesting final review.
-- At least one approval from a repository administrator or owner is required before merge.
-- Squash merges are preferred for small changes; maintainers may rebase or squash per repo policy.
-
-## Code style and quality
-
-- Follow established TypeScript and React patterns used in the codebase.
-- Keep UI and styling consistent with the existing Tailwind + component patterns.
-- Add or update unit/integration tests for non-trivial logic when applicable.
-
-## Secrets and sensitive data
-
-- Never commit secrets, API keys, or credentials to the repository.
-- Use the provided `.env.example` as guidance for environment variables and keep real values in a local `.env.local` (which must be in `.gitignore`).
-- If a secret was accidentally committed, notify repository admins immediately and rotate the secret. Use tools such as BFG or `git filter-repo` to remove secrets from history.
-
-## Security issues
-
-If you discover a security vulnerability, do not open a public issue. Instead, email `furolabs@gmail.com` with details of the issue and sensitive information (if necessary). The security team will respond and coordinate remediation.
-
-## Tests & CI
-
-- The repository uses CI (if configured) to run linting, type-checking, and any test suites.
-- Ensure your code passes local `npm run lint` and `npm run typecheck` before submitting a PR.
-
-## Documentation & content changes
-
-- Content that appears on the public website (marketing copy, team bios, pricing, etc.) must be reviewed and approved by a designated content owner prior to publishing. Mention the content owner in the PR description.
-
-## Merging & release
-
-- Only repository administrators and owners may merge PRs into `main` as part of an official release process. Regular development work should target `dev` and be merged into `dev` after review. Releases to `main` should follow the internal release checklist.
-- For releases or deployments, follow the internal release checklist and deployment process maintained by the DevOps team.
-
-## Enforcement & audit
-
-Furo Labs reserves the right to refuse, revert, or audit any contribution. Repeated violations of these guidelines (sensitive data commits, bypassing review, or unauthorized access) may result in revoked access.
-
-## Questions
-
-If you have any questions about the contribution process or need help preparing a PR, contact `furolabs@gmail.com`.
+> [!CAUTION]
+> **🛑 INTERNAL ONLY:** This repository is restricted to authorized FURO Labs employees, owners, and administrators. External pull requests are not accepted unless specifically requested by leadership.
 
 ---
 
-This document reflects the contribution policy for the Furo Labs official website repository. Updates to this file may be made by repository administrators.
+## 🏗️ The Workflow
+
+Unlike our other repositories, the Official Web uses a strict **`dev` → `main**` promotion strategy to ensure production stability.
+
+1. **Sync:** Ensure your local `dev` branch is up to date.
+2. **Branch:** Create a feature branch from `dev`.
+* `git checkout -b feat/team-update dev`
+3. **Build:** Implement changes following our [Tech Stack](https://www.google.com/search?q=%23-tech-stack) guidelines.
+4. **Verify:** Run local checks (Linting & Type-checking).
+5. **PR:** Open a Pull Request targeting the **`dev`** branch.
+
+---
+
+## ✅ Pre-Flight Checklist
+
+Before submitting your PR, ensure it passes the FURO Labs "Senior-Led" standard:
+
+* [ ] **Build Check:** `npm run dev` starts without console errors.
+* [ ] **Type Safety:** `npm run typecheck` passes (No `any` types allowed).
+* [ ] **Linting:** `npm run lint` passes perfectly.
+* [ ] **Secrets:** Verified that no Firebase keys or `.env` values are tracked by Git.
+* [ ] **UI Sync:** Animations (`framer-motion`) and styles align with the [Brand Identity](https://www.google.com/search?q=%23-brand-identity).
+
+---
+
+## 🎨 Brand Identity
+
+Every pixel on the official site must adhere to our visual language:
+
+* **Primary Cyan:** `#3BE2FF` (Futuristic & Clean)
+* **Accent Purple:** `#C452FF` (Electric & Bold)
+* **Deep Navy:** `#121E29` (Background)
+* **Typography:** 'Space Grotesk' for headlines; clean sans-serif for body.
+* **Icons:** Exclusively use `lucide-react` or `@tabler/icons-react`.
+
+---
+
+## 🛠️ Tech Stack & Patterns
+
+* **Framework:** Next.js (App Router) + TypeScript.
+* **Styling:** Tailwind CSS + Radix UI primitives.
+* **Backend:** Firebase/Firestore (Environment-driven config).
+* **AI Integration:** Genkit flows should live under `src/ai`.
+* **Team Management:** Updates to team bios happen in `src/components/sections/team.tsx`.
+
+---
+
+## 🔐 Secrets & Security
+
+This repository is **Public** for infrastructure benefits, but the data is **Proprietary**.
+
+* **Environment Variables:** Use `.env.local` for development. Never commit real credentials.
+* **Secret Leakage:** If you accidentally commit a secret, notify a Repository Admin immediately and rotate the key.
+* **Vulnerabilities:** Reported security issues should be sent directly to `furolabs@gmail.com`—do not open a public issue.
+
+---
+
+## 🔀 Pull Request Requirements
+
+* **Target Branch:** All PRs must target `dev`. Only Admins/Owners merge `dev` into `main`.
+* **Description:** Include screenshots/screen-recordings for any UI changes.
+* **Reviewers:** Tag at least one Owner or Lead Engineer for review.
+* **Approval:** At least one "Approve" is required to merge.
+
+---
+
+## 👥 Access & Questions
+
+If you are a new team member and need contributor access, please email `furolabs@gmail.com` with your GitHub username and role.
+
+### 🚀 Let’s build a digital experience that reflects our engineering excellence.
