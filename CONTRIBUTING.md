@@ -81,7 +81,3 @@ While this repository is public for infrastructure optimization, the contents re
 ## Access and Inquiries
 
 For contributor access or technical questions regarding this repository, please contact the administration team at [furolabs@gmail.com](mailto:furolabs@gmail.com) with your GitHub username and organizational role.
-
----
-
-Would you like me to draft a **Pull Request Template** that matches this professional tone for the official website?
