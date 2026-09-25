@@ -3,40 +3,49 @@
 import { motion } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { Calendar, TrendingUp, Users, Zap } from 'lucide-react';
+import { TrendingUp, Smartphone, Music, Heart, Building2 } from 'lucide-react';
 import { useScrollAnimation, staggerContainer, fadeInUp, slideInLeft, slideInRight } from '@/hooks/use-scroll-animation';
-import { companyConfig } from '@/lib/company-config';
 
 const timelineData = [
   {
-    year: '2018',
-    title: 'The Spark',
-    description: `${companyConfig.name} was founded by a group of passionate developers with a shared vision for a better digital future.`,
-    icon: <Zap className="h-5 w-5" />,
+    year: '2019',
+    badge: 'Genesis',
+    title: 'The Birth of Flashboard',
+    description: 'Began building Flashboard, an ambitious Android keyboard created to redefine how mobile users type, customize, and communicate in Sri Lanka and globally.',
+    icon: <Smartphone className="h-5 w-5" />,
+    tags: ['Android', 'Kotlin', 'Mobile IME'],
   },
   {
-    year: '2020',
-    title: 'First Major Project',
-    description: 'Landed our first enterprise client, delivering a scalable e-commerce platform that handled millions of users.',
+    year: '2020 - 2023',
+    badge: 'Rapid Scale & 2.3M+ Downloads',
+    title: 'Flashboard Feature Innovation & Scale',
+    description: 'Flashboard experienced exponential adoption, crossing 2.3M+ Google Play Store downloads. Rolled out translation, voice typing, text-to-sticker engine, sticker marketplace, in-keyboard calculator, stylish fonts, customizable layouts, and offline dictionary.',
     icon: <TrendingUp className="h-5 w-5" />,
-  },
-  {
-    year: '2022',
-    title: 'Expanding Horizons',
-    description: 'Opened our mobile development division, launching several successful apps on the App Store and Google Play.',
-    icon: <Users className="h-5 w-5" />,
+    tags: ['2.3M+ Downloads', 'Sticker Engine', 'Premium Tier'],
   },
   {
     year: '2024',
-    title: 'AI Integration',
-    description: 'Began integrating generative AI into our workflow, offering clients smarter, more efficient development cycles.',
-    icon: <Calendar className="h-5 w-5" />,
+    badge: 'AI Keyboard & Lyric Library',
+    title: 'AI Content Generation & Lyric Library',
+    description: 'Integrated generative AI directly into Flashboard, empowering users to draft messages and create smart content on the fly. Simultaneously launched Lyric Library, a dedicated Sinhala song and lyrics platform curated for the Sri Lankan music community.',
+    icon: <Music className="h-5 w-5" />,
+    tags: ['Gen-AI Keyboard', 'Lyric Library', 'Sinhala Music'],
   },
   {
-    year: 'Future',
-    title: 'The Next Frontier',
-    description: 'Pioneering new solutions in decentralized applications and the spatial web, shaping the next wave of digital interaction.',
-    icon: <Zap className="h-5 w-5" />,
+    year: 'Nov 2025',
+    badge: 'Company Incorporation & Revenue Spike',
+    title: 'Registered as Furo (Pvt) Ltd & Flash News Launch',
+    description: 'Officially registered the company as Furo (Pvt) Ltd, operating commercially under the FuroLabs brand. Rolled out Flash News within Flashboard, driving a massive spike in monthly recurring revenue and daily active user retention.',
+    icon: <Building2 className="h-5 w-5" />,
+    tags: ['Furo (Pvt) Ltd', 'FuroLabs', 'Flash News', 'Revenue Spike'],
+  },
+  {
+    year: 'Late 2027',
+    badge: 'The Next Major Flagship',
+    title: 'Halo: Next-Gen Dating & Social Network',
+    description: 'Engineering Halo, our upcoming flagship dating and social discovery platform designed for Sri Lankan youth, combining cultural context, safety, and modern social experiences.',
+    icon: <Heart className="h-5 w-5" />,
+    tags: ['Social Network', 'Dating Platform', 'Sri Lankan Youth'],
   },
 ];
 
@@ -76,7 +85,7 @@ export default function About() {
               variant="outline" 
               className="border-primary/50 bg-primary/10 text-primary px-4 py-2"
             >
-              Our Journey
+              Our Journey & Product Roadmap
             </Badge>
           </motion.div>
           
@@ -84,16 +93,15 @@ export default function About() {
             variants={fadeInUp}
             className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
           >
-            Crafting Stories of{' '}
-            <span className="gradient-text">Innovation</span>
+            From Flashboard to{' '}
+            <span className="gradient-text">FuroLabs</span>
           </motion.h2>
           
           <motion.p
             variants={fadeInUp}
             className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground lg:text-xl"
           >
-            From humble beginnings to industry leadership, our journey reflects 
-            our commitment to pushing the boundaries of digital innovation.
+            Tracing our evolution from a breakthrough Android keyboard with 2.3M+ downloads to an incorporated software powerhouse launching AI features, media platforms, and next-gen social ecosystems.
           </motion.p>
         </motion.div>
 
@@ -120,29 +128,47 @@ export default function About() {
                   }`}>
                     <Card className="group hover:shadow-2xl transition-all duration-500 bg-background/80 backdrop-blur-sm border-2 hover:border-primary/30">
                       <CardContent className="p-8">
-                        <div className="flex items-center gap-4 mb-4">
-                          <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
-                            <div className="text-primary">
-                              {item.icon}
+                        <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                          <div className="flex items-center gap-3">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                              <div className="text-primary">
+                                {item.icon}
+                              </div>
                             </div>
-                          </div>
-                          <div>
                             <Badge 
                               variant="outline" 
-                              className="text-primary font-bold border-primary/30 bg-primary/5"
+                              className="text-primary font-bold border-primary/30 bg-primary/5 text-sm px-3 py-1"
                             >
                               {item.year}
                             </Badge>
                           </div>
+                          {item.badge && (
+                            <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-accent/20 text-accent-foreground border border-accent/30">
+                              {item.badge}
+                            </span>
+                          )}
                         </div>
                         
                         <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
                           {item.title}
                         </h3>
                         
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
                           {item.description}
                         </p>
+
+                        {item.tags && (
+                          <div className="mt-4 flex flex-wrap gap-1.5 pt-2 border-t border-border/40">
+                            {item.tags.map((tag) => (
+                              <span
+                                key={tag}
+                                className="text-xs px-2.5 py-1 rounded-md bg-muted/70 text-foreground/80 font-medium border border-border/40"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                       </CardContent>
                     </Card>
                   </div>
@@ -182,20 +208,20 @@ export default function About() {
           animate={isInView ? "visible" : "hidden"}
         >
           {[
-            { label: 'Years of Experience', value: '6+' },
-            { label: 'Projects Completed', value: '5+' },
-            { label: 'Happy Clients', value: '2.4M+' },
-            { label: 'Team Members', value: '15+' },
+            { label: 'Active Play Store Downloads', value: '2.3M+' },
+            { label: 'Year Product Started', value: '2019' },
+            { label: 'Registered Entity', value: 'Furo (Pvt) Ltd' },
+            { label: 'Upcoming Major Platform', value: 'Halo (2027)' },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
               variants={fadeInUp}
               className="group"
             >
-              <div className="text-3xl md:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">
+              <div className="text-2xl md:text-3xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">
                 {stat.value}
               </div>
-              <div className="text-sm text-muted-foreground mt-2">
+              <div className="text-xs md:text-sm text-muted-foreground mt-2">
                 {stat.label}
               </div>
             </motion.div>

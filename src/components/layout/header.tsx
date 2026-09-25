@@ -6,13 +6,13 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Bot, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { FuroLogo } from '@/components/ui/furo-logo';
 import { companyConfig } from '@/lib/company-config';
 
 const navLinks = [
   { href: '#services', label: 'Services' },
-  { href: '#about', label: 'About' },
-  { href: '#team', label: 'Team' },
+  { href: '#about', label: 'About & Roadmap' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -46,14 +46,9 @@ export default function Header() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="/" className="mr-8 flex items-center space-x-2">
-              <motion.div
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-              >
-                <Bot className="h-7 w-7 text-primary" />
-              </motion.div>
-              <span className="font-bold font-display text-xl">
+            <Link href="/" className="mr-8 flex items-center space-x-2.5">
+              <FuroLogo size={32} />
+              <span className="font-bold font-display text-xl tracking-tight">
                 {companyConfig.name}
               </span>
             </Link>
@@ -118,10 +113,10 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                   <Link 
                     href="/" 
-                    className="flex items-center space-x-2"
+                    className="flex items-center space-x-2.5"
                     onClick={() => setSheetOpen(false)}
                   >
-                    <Bot className="h-6 w-6 text-primary" />
+                    <FuroLogo size={28} />
                     <span className="font-bold font-display text-lg">{companyConfig.name}</span>
                   </Link>
                 </div>

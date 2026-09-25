@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Bot, Github, Linkedin, Twitter, Mail, MapPin, Phone, Heart } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, MapPin, Phone, Heart } from 'lucide-react';
 import Link from 'next/link';
+import { FuroLogo } from '@/components/ui/furo-logo';
 import { companyConfig } from '@/lib/company-config';
 
 export default function Footer() {
@@ -14,8 +15,7 @@ export default function Footer() {
 
   const quickLinks = [
     { href: '#services', label: 'Services' },
-    { href: '#about', label: 'About' },
-    { href: '#team', label: 'Team' },
+    { href: '#about', label: 'About & Roadmap' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -54,13 +54,8 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-3">
-              <motion.div
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-              >
-                <Bot className="h-8 w-8 text-primary" />
-              </motion.div>
-              <span className="font-bold font-display text-xl">
+              <FuroLogo size={36} />
+              <span className="font-bold font-display text-xl tracking-tight">
                 {companyConfig.name}
               </span>
             </div>
@@ -192,7 +187,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              &copy; {companyConfig.branding.copyrightYear} {companyConfig.name}. All rights reserved.
+              &copy; {companyConfig.branding.copyrightYear} {companyConfig.name} ({companyConfig.legalName}). All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <span>Made with</span>

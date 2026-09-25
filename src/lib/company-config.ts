@@ -11,8 +11,9 @@ export const companyConfig = {
   // ============================================
   // BASIC COMPANY INFORMATION
   // ============================================
-  name: 'Furo Labs',
-  displayName: 'Furo Labs',
+  name: 'FuroLabs',
+  displayName: 'FuroLabs',
+  legalName: 'Furo (Pvt) Ltd',
   tagline: 'Crafting digital experiences that inspire and transform businesses through innovative technology solutions.',
   
   // ============================================
@@ -39,9 +40,9 @@ export const companyConfig = {
   // BRANDING & DISPLAY
   // ============================================
   branding: {
-    logoAlt: 'Furo Labs Logo',
+    logoAlt: 'FuroLabs Logo',
     copyrightYear: new Date().getFullYear(),
-    copyrightText: `Copyright (c) ${new Date().getFullYear()} Furo Labs`,
+    copyrightText: `Copyright (c) ${new Date().getFullYear()} Furo (Pvt) Ltd. All rights reserved.`,
   },
 
   // ============================================
@@ -58,7 +59,7 @@ export const companyConfig = {
   // ============================================
   teamInfo: {
     totalMembers: 5,
-    foundedYear: 2018,
+    foundedYear: 2019,
   },
 
   // ============================================

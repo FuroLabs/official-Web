@@ -87,7 +87,7 @@ export default function Hero() {
           variants={fadeInUp}
           className="mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg md:text-xl lg:text-2xl lg:max-w-3xl"
         >
-          We build cutting-edge software solutions that power progress. From sleek web apps to robust mobile experiences, your vision is our command.
+          We engineer next-generation digital products and AI-powered mobile experiences. Creators of <span className="text-foreground font-semibold">Flashboard</span>, Sri Lanka's leading intelligent Android keyboard with over 2.3M+ global downloads.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -101,7 +101,7 @@ export default function Hero() {
             asChild
           >
             <a href="#services" className="flex items-center gap-2">
-              Explore Our Services
+              Explore Our Ecosystem
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </Button>
@@ -121,16 +121,16 @@ export default function Hero() {
           className="mt-12 grid grid-cols-3 gap-6 text-center sm:mt-16 sm:gap-8 md:gap-12"
         >
           <div>
-            <div className="text-xl font-bold text-primary sm:text-2xl">5+</div>
-            <div className="text-xs text-muted-foreground sm:text-sm">Projects Delivered</div>
+            <div className="text-xl font-bold text-primary sm:text-3xl">2.3M+</div>
+            <div className="text-xs text-muted-foreground sm:text-sm font-medium">Play Store Downloads</div>
           </div>
           <div>
-            <div className="text-xl font-bold text-primary sm:text-2xl">2.4M+</div>
-            <div className="text-xs text-muted-foreground sm:text-sm">Happy Clients</div>
+            <div className="text-xl font-bold text-primary sm:text-3xl">Nov 2025</div>
+            <div className="text-xs text-muted-foreground sm:text-sm font-medium">Incorporated as Furo (Pvt) Ltd</div>
           </div>
           <div>
-            <div className="text-xl font-bold text-primary sm:text-2xl">24/7</div>
-            <div className="text-xs text-muted-foreground sm:text-sm">Support</div>
+            <div className="text-xl font-bold text-primary sm:text-3xl">2027</div>
+            <div className="text-xs text-muted-foreground sm:text-sm font-medium">Halo Social App Roadmap</div>
           </div>
         </motion.div>
       </motion.div>
