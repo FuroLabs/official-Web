@@ -14,24 +14,24 @@ import { useScrollAnimation, staggerContainer, fadeInUp } from '@/hooks/use-scro
 
 const services = [
   {
-    icon: <CodeXml className="h-10 w-10 text-primary" />,
-    title: 'Web Development',
-    description: 'We build responsive, high-performance web applications tailored to your business needs, from marketing sites to complex enterprise platforms.',
-    tech: ['React', 'Next.js', 'Node.js', 'TypeScript', 'GraphQL'],
-    gradient: 'from-blue-500/10 to-cyan-500/10',
-  },
-  {
     icon: <Smartphone className="h-10 w-10 text-primary" />,
-    title: 'Mobile App Development',
-    description: 'Engage your users on the go with beautiful and intuitive native mobile applications for both iOS and Android platforms.',
-    tech: ['Swift', 'Kotlin', 'React Native', 'Flutter', 'Firebase'],
+    title: 'Mobile Architecture & Products',
+    description: 'Home of Flashboard (2.3M+ downloads). We engineer ultra-fast Android and iOS native apps, custom input method editors (IMEs), offline-first caching, and high-engagement mobile consumer apps.',
+    tech: ['Kotlin', 'Android SDK', 'Flutter', 'React Native', 'Firebase'],
     gradient: 'from-purple-500/10 to-pink-500/10',
   },
   {
+    icon: <CodeXml className="h-10 w-10 text-primary" />,
+    title: 'Generative AI & Intelligent Systems',
+    description: 'Seamlessly embedding AI into daily user workflows, from in-keyboard smart content generation and real-time translation to recommendation algorithms and automated content pipelines.',
+    tech: ['Gemini API', 'LLMs', 'OpenAI', 'Python', 'FastAPI'],
+    gradient: 'from-blue-500/10 to-cyan-500/10',
+  },
+  {
     icon: <Server className="h-10 w-10 text-primary" />,
-    title: 'Software Development',
-    description: 'Our custom software solutions are designed to optimize your operations, powered by robust architecture and scalable backends.',
-    tech: ['Python', 'Go', 'Docker', 'Kubernetes', 'AWS/GCP'],
+    title: 'Full-Stack & Cloud Platforms',
+    description: 'Scalable backend engines powering millions of requests. We build robust cloud architectures for media delivery, news streaming, sticker marketplaces, and real-time social platforms.',
+    tech: ['Next.js', 'Node.js', 'TypeScript', 'Docker', 'Google Cloud'],
     gradient: 'from-green-500/10 to-emerald-500/10',
   },
 ];
