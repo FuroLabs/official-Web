@@ -11,6 +11,7 @@ import { FuroLogo } from '@/components/ui/furo-logo';
 import { companyConfig } from '@/lib/company-config';
 
 const navLinks = [
+  { href: '#products', label: 'Products' },
   { href: '#services', label: 'Services' },
   { href: '#about', label: 'About & Roadmap' },
   { href: '#contact', label: 'Contact' },
