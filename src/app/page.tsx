@@ -2,6 +2,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import PageTransition from '@/components/layout/page-transition';
 import Hero from '@/components/sections/hero';
+import Products from '@/components/sections/products';
 import Services from '@/components/sections/services';
 import About from '@/components/sections/about';
 import TechVisualizer from '@/components/sections/tech-visualizer';
@@ -16,6 +17,7 @@ export default function Home() {
       <PageTransition>
         <main className="flex-1">
           <Hero />
+          <Products />
           <Services />
           <About />
           <TechVisualizer />
