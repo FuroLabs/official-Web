@@ -6,6 +6,10 @@ import Link from 'next/link';
 import { FuroLogo } from '@/components/ui/furo-logo';
 import { companyConfig } from '@/lib/company-config';
 
+/**
+ * Global footer with company brand details, quick navigation links,
+ * contact coordinates, and legal entity copyright information.
+ */
 export default function Footer() {
   const socialLinks = [
     { icon: Twitter, href: companyConfig.socialLinks.twitter, name: 'Twitter', color: 'hover:text-blue-400' },

@@ -10,6 +10,10 @@ import Team from '@/components/sections/team';
 import Testimonials from '@/components/sections/testimonials';
 import Contact from '@/components/sections/contact';
 
+/**
+ * The official FuroLabs landing page assembling the Hero, Flagship Products,
+ * Services, Journey Roadmap, AI Tech Visualizer, and Contact sections.
+ */
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-br from-background via-background to-muted/10">

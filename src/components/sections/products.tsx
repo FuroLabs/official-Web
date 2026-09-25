@@ -1,26 +1,26 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
   Smartphone,
-  Sparkles,
   Newspaper,
   Music,
   Heart,
-  ExternalLink,
   Download,
   Flame,
-  Globe,
-  Radio,
-  Layers,
   ArrowUpRight,
 } from 'lucide-react';
 import { useScrollAnimation, staggerContainer, fadeInUp } from '@/hooks/use-scroll-animation';
 
+/**
+ * Flagship Products section showcasing Flashboard, Flash News, Lyric Library, and Halo
+ * in an interactive Bento Grid with live links and accessibility-first animations.
+ */
 export default function Products() {
   const { ref, isInView } = useScrollAnimation();
+  const shouldReduceMotion = useReducedMotion();
 
   return (
     <section id="products" className="py-24 md:py-32 relative overflow-hidden bg-muted/10">
@@ -28,27 +28,43 @@ export default function Products() {
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <motion.div
           className="absolute left-1/3 top-1/4 h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-sky-500/10 via-indigo-500/10 to-transparent blur-3xl"
-          animate={{
-            scale: [1, 1.15, 1],
-            rotate: [0, 90, 0],
-          }}
-          transition={{
-            duration: 22,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
+          animate={
+            shouldReduceMotion
+              ? undefined
+              : {
+                  scale: [1, 1.15, 1],
+                  rotate: [0, 90, 0],
+                }
+          }
+          transition={
+            shouldReduceMotion
+              ? undefined
+              : {
+                  duration: 22,
+                  repeat: Infinity,
+                  ease: 'linear',
+                }
+          }
         />
         <motion.div
           className="absolute right-1/4 bottom-1/4 h-[400px] w-[400px] rounded-full bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-transparent blur-3xl"
-          animate={{
-            scale: [1.15, 1, 1.15],
-            rotate: [360, 180, 0],
-          }}
-          transition={{
-            duration: 26,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
+          animate={
+            shouldReduceMotion
+              ? undefined
+              : {
+                  scale: [1.15, 1, 1.15],
+                  rotate: [360, 180, 0],
+                }
+          }
+          transition={
+            shouldReduceMotion
+              ? undefined
+              : {
+                  duration: 26,
+                  repeat: Infinity,
+                  ease: 'linear',
+                }
+          }
         />
       </div>
 
@@ -56,9 +72,9 @@ export default function Products() {
         {/* Section Heading */}
         <motion.div
           className="mb-16 md:mb-20 text-center"
-          variants={staggerContainer}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
+          variants={shouldReduceMotion ? undefined : staggerContainer}
+          initial={shouldReduceMotion ? undefined : 'hidden'}
+          animate={shouldReduceMotion ? undefined : isInView ? 'visible' : 'hidden'}
         >
           <motion.div variants={fadeInUp} className="mb-4 flex justify-center">
             <Badge
@@ -151,8 +167,11 @@ export default function Products() {
               {/* Action Link & Store Button */}
               <div className="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-border/40">
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
-                  <span className="inline-block h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                  Live on Google Play Store
+                  <span
+                    aria-hidden="true"
+                    className="inline-block h-2 w-2 rounded-full bg-emerald-500 animate-pulse motion-reduce:animate-none"
+                  />
+                  <span>Live on Google Play Store</span>
                 </div>
 
                 <Button
@@ -286,7 +305,7 @@ export default function Products() {
                 <div className="h-12 w-12 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-500 group-hover:scale-105 transition-transform duration-300">
                   <Heart className="h-6 w-6" />
                 </div>
-                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-500 animate-pulse">
+                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-500 animate-pulse motion-reduce:animate-none">
                   Incubating | Late 2027
                 </span>
               </div>

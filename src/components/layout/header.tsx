@@ -17,6 +17,10 @@ const navLinks = [
   { href: '#contact', label: 'Contact' },
 ];
 
+/**
+ * Main application sticky header with responsive desktop navigation,
+ * brand logo, and mobile sheet navigation menu.
+ */
 export default function Header() {
   const [isSheetOpen, setSheetOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
