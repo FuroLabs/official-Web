@@ -3,9 +3,8 @@
 import { motion } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { Calendar, TrendingUp, Sparkles, Smartphone, Music, Heart, Building2, Flame } from 'lucide-react';
+import { TrendingUp, Smartphone, Music, Heart, Building2 } from 'lucide-react';
 import { useScrollAnimation, staggerContainer, fadeInUp, slideInLeft, slideInRight } from '@/hooks/use-scroll-animation';
-import { companyConfig } from '@/lib/company-config';
 
 const timelineData = [
   {

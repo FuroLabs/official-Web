@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 
 interface LogoProps {
-  size?: number;
-  className?: string;
+  readonly size?: number;
+  readonly className?: string;
 }
 
 export function FuroLogo({ size = 32, className = '' }: LogoProps) {
