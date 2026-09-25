@@ -106,8 +106,23 @@ export default function About() {
         </motion.div>
 
         <div className="relative max-w-6xl mx-auto">
-          {/* Timeline line */}
-          <div className="absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-primary via-primary/50 to-transparent -translate-x-1/2 hidden md:block"></div>
+          {/* Timeline background track line */}
+          <div className="absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-primary/30 via-primary/10 to-transparent -translate-x-1/2 hidden md:block" />
+
+          {/* Animated Timeline Glow Beam */}
+          <motion.div
+            className="absolute left-1/2 w-0.5 bg-gradient-to-b from-transparent via-cyan-400 to-transparent -translate-x-1/2 hidden md:block rounded-full shadow-[0_0_12px_#38bdf8]"
+            style={{ height: '140px' }}
+            animate={{
+              top: ['-10%', '100%'],
+              opacity: [0, 1, 1, 0],
+            }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+          />
           
           <div className="space-y-12 md:space-y-16">
             {timelineData.map((item, index) => (
@@ -126,7 +141,7 @@ export default function About() {
                       ? 'md:mr-auto md:pr-8' 
                       : 'md:ml-auto md:pl-8'
                   }`}>
-                    <Card className="group hover:shadow-2xl transition-all duration-500 bg-background/80 backdrop-blur-sm border-2 hover:border-primary/30">
+                    <Card className="glow-card group hover:shadow-2xl transition-all duration-500 bg-background/85 backdrop-blur-md border border-border/60 hover:border-primary/40 rounded-2xl overflow-hidden">
                       <CardContent className="p-8">
                         <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
                           <div className="flex items-center gap-3">
