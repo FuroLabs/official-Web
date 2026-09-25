@@ -93,18 +93,37 @@ export default function Hero() {
         {/* CTA Buttons */}
         <motion.div
           variants={fadeInUp}
-          className="mt-8 flex flex-col gap-4 sm:flex-row sm:mt-10"
+          className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:mt-10"
         >
           <Button 
             size="lg" 
             className="group relative overflow-hidden bg-primary text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:scale-105"
             asChild
           >
-            <a href="#services" className="flex items-center gap-2">
+            <a href="#products" className="flex items-center gap-2">
               Explore Our Ecosystem
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </Button>
+
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="glass border-2 border-emerald-500/40 hover:border-emerald-500 hover:bg-emerald-500/10 text-foreground transition-all hover:scale-105 flex items-center gap-2.5"
+            asChild
+          >
+            <a
+              href="https://play.google.com/store/apps/details?id=com.savinduplus.keyboard&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg className="h-4 w-4 fill-current text-emerald-500" viewBox="0 0 24 24">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-1.623V3.437c0-.624.23-1.19.61-1.623zM15.207 13.414l2.586 2.586-11.89 6.862 9.304-9.448zm0-2.828L5.903 1.138l11.89 6.862-2.586 2.586zm1.414 1.414l3.774 2.18a1.5 1.5 0 0 0 0-2.597l-3.774-2.18 1.414 1.414z" />
+              </svg>
+              <span>Flashboard on Google Play (2.3M+)</span>
+            </a>
+          </Button>
+
           <Button 
             size="lg" 
             variant="outline" 
