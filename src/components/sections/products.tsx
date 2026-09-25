@@ -152,25 +152,38 @@ export default function Products() {
                   Our marquee consumer product started in 2019. Now an AI-infused powerhouse featuring generative writing assistance, real-time multilingual translation, an on-demand sticker marketplace, voice typing, custom typography, an in-keyboard calculator, and offline dictionaries.
                 </p>
 
-                {/* Feature Pills */}
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {[
-                    'AI Writing Assistant',
-                    '2.3M+ Google Play Installs',
-                    'Sticker Marketplace',
-                    'Text-to-Sticker Engine',
-                    'Voice Typing',
-                    'In-Keyboard Calculator',
-                    'Custom Layouts & Fonts',
-                    'Offline Dictionaries',
-                  ].map((feat) => (
-                    <span
-                      key={feat}
-                      className="px-3 py-1 text-xs rounded-lg bg-muted/70 text-foreground/80 font-medium border border-border/40"
-                    >
-                      {feat}
-                    </span>
-                  ))}
+                {/* Interactive Keyboard Feature Carousel / Pill Strip */}
+                <div className="relative w-full overflow-hidden rounded-xl bg-background/50 border border-border/40 p-3 mb-8">
+                  {/* Subtle edge fades */}
+                  <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-card to-transparent z-10 pointer-events-none" />
+                  <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-card to-transparent z-10 pointer-events-none" />
+
+                  <div className="animate-marquee gap-3 items-center">
+                    {[
+                      'AI Writing Assistant',
+                      'Sticker Engine & Marketplace',
+                      'Voice Typing',
+                      'In-Keyboard Calculator',
+                      'Custom Fonts',
+                      'Offline Dictionary',
+                      'Sinhala & English Transliteration',
+                      'AI Writing Assistant',
+                      'Sticker Engine & Marketplace',
+                      'Voice Typing',
+                      'In-Keyboard Calculator',
+                      'Custom Fonts',
+                      'Offline Dictionary',
+                      'Sinhala & English Transliteration',
+                    ].map((feature, i) => (
+                      <span
+                        key={`${feature}-${i}`}
+                        className="inline-flex items-center gap-2 whitespace-nowrap px-3.5 py-1.5 rounded-lg bg-primary/10 border border-primary/20 text-xs font-semibold text-primary shadow-sm hover:scale-105 hover:bg-primary/20 transition-all cursor-default"
+                      >
+                        <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
 
