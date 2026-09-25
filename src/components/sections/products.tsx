@@ -22,6 +22,16 @@ export default function Products() {
   const { ref, isInView } = useScrollAnimation();
   const shouldReduceMotion = useReducedMotion();
 
+  let headerAnimateState: string | undefined;
+  if (!shouldReduceMotion) {
+    headerAnimateState = isInView ? 'visible' : 'hidden';
+  }
+
+  let gridAnimateState: string | undefined;
+  if (!shouldReduceMotion) {
+    gridAnimateState = isInView ? 'visible' : 'hidden';
+  }
+
   return (
     <section id="products" className="py-24 md:py-32 relative overflow-hidden bg-muted/10">
       {/* Background ambient lighting */}
@@ -74,7 +84,7 @@ export default function Products() {
           className="mb-16 md:mb-20 text-center"
           variants={shouldReduceMotion ? undefined : staggerContainer}
           initial={shouldReduceMotion ? undefined : 'hidden'}
-          animate={shouldReduceMotion ? undefined : isInView ? 'visible' : 'hidden'}
+          animate={headerAnimateState}
         >
           <motion.div variants={fadeInUp} className="mb-4 flex justify-center">
             <Badge
@@ -103,9 +113,9 @@ export default function Products() {
         {/* Bento Grid */}
         <motion.div
           className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-6"
-          variants={staggerContainer}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
+          variants={shouldReduceMotion ? undefined : staggerContainer}
+          initial={shouldReduceMotion ? undefined : 'hidden'}
+          animate={gridAnimateState}
         >
           {/* 1. Flashboard - Large Marquee Bento Card (Takes 8 cols on LG) */}
           <motion.div
